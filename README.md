@@ -9,21 +9,25 @@
 
 ## 项目启动
 
-1. 先创建临时python环境,上传git的时候记得删除临时环境，避免隐私泄露
+1. 先拉取下拉
+```
+git clone https://github.com/Rolinsf/rolinsf-activity.git
+cd rolinsf-activity
+```
+2. 先创建临时python环境,上传git的时候记得删除临时环境，避免隐私泄露
 ```
 python -m venv myenv
 . .\myenv\Scripts\activate
 ```
-2. 再下载依赖包
+3. 再下载依赖包
 ```
 pip install -r requirements.txt
 python app.py
 ```
-3.开发完后，如有添加新的依赖包，请将依赖包重新写入requirements.txt
+4.开发完后，如有添加新的依赖包，请将依赖包重新写入requirements.txt
 ```
 pip freeze > requirements.txt
 ```
-
 
 ## 项目日志  
 1. 2024.12.29 初步页面规划，增加左侧边栏（非固定，鼠标滑动显示）——清风
